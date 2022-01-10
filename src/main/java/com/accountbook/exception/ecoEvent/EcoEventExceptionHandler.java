@@ -28,9 +28,9 @@ public class EcoEventExceptionHandler {
         return new ApiResponse(EcoEventExceptionCode.ACCESS_EMPTY_DATA.getCode(), HttpStatus.EXPECTATION_FAILED,EcoEventExceptionCode.ACCESS_EMPTY_DATA.getMsg());
     }
     
-    @ExceptionHandler
-    public ApiResponse NotExpectedExceptionHandler(Exception e){
-        return new ApiResponse(EcoEventExceptionCode.NOT_EXPECTED_ERROR.getCode(),HttpStatus.EXPECTATION_FAILED,EcoEventExceptionCode.NOT_EXPECTED_ERROR.getMsg());
-    }
+//    @ExceptionHandler
+//    public ApiResponse NotExpectedExceptionHandler(Exception e){
+//        return new ApiResponse(EcoEventExceptionCode.NOT_EXPECTED_ERROR.getCode(),HttpStatus.EXPECTATION_FAILED,EcoEventExceptionCode.NOT_EXPECTED_ERROR.getMsg());
+//    }
 
 }

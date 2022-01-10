@@ -23,8 +23,8 @@ public class BudgetExceptionHandler {
         return new ApiResponse(BudgetExceptionCode.ACCESS_EMPTY_DATA.getCode(), HttpStatus.EXPECTATION_FAILED,BudgetExceptionCode.ACCESS_EMPTY_DATA.getMsg());
     }
 
-    @ExceptionHandler
-    public ApiResponse NotExpectedExceptionHandler(Exception e){
-        return new ApiResponse(BudgetExceptionCode.NOT_EXPECTED_ERROR.getCode(),HttpStatus.EXPECTATION_FAILED,BudgetExceptionCode.NOT_EXPECTED_ERROR.getMsg());
-    }
+//    @ExceptionHandler
+//    public ApiResponse NotExpectedExceptionHandler(Exception e){
+//        return new ApiResponse(BudgetExceptionCode.NOT_EXPECTED_ERROR.getCode(),HttpStatus.EXPECTATION_FAILED,BudgetExceptionCode.NOT_EXPECTED_ERROR.getMsg());
+//    }
 }
